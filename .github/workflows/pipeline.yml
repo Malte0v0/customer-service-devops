@@ -16,7 +16,7 @@ jobs:
         java: [17]
 
     services:
-      mysql:
+      mariadb:
         image: mariadb:lts
         env:
             MARIADB_ROOT_PASSWORD: ${{secrets.MARIADB_ROOT_PASSWORD}}
